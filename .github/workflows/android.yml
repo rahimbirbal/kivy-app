@@ -14,13 +14,14 @@ jobs:
       PATH: $HOME/android-sdk/cmdline-tools/latest/bin:$HOME/android-sdk/platform-tools:$PATH
 
     steps:
-    - name: Checkout Repository
-      uses: actions/checkout@v3
-
     - name: Install tar utility
       run: |
         sudo apt-get update
         sudo apt-get install -y tar
+    
+    steps:
+    - name: Checkout Repository
+      uses: actions/checkout@v3
 
     - name: Set up Python
       uses: actions/setup-python@v4
