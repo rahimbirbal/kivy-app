@@ -1,4 +1,11 @@
 [app]
+android.api = 34
+android.minapi = 21
+android.build_tools_version = 34.0.0
+android.sdk = 34
+android.ndk = 25b
+android.ndk_api = 21
+
 title = WarnaKivyApp
 package.name = warnakivy
 package.domain = org.kivy
