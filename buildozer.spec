@@ -1,11 +1,4 @@
 [app]
-android.api = 34
-android.minapi = 21
-android.build_tools_version = 34.0.0
-android.sdk = 34
-android.ndk = 25b
-android.ndk_api = 21
-
 title = WarnaKivyApp
 package.name = warnakivy
 package.domain = org.kivy
@@ -15,6 +8,14 @@ version = 1.0
 requirements = python3,kivy,opencv-python,numpy,pandas,scikit-learn
 orientation = portrait
 fullscreen = 0
+
+# Android-specific options
+android.api = 34
+android.minapi = 21
+android.build_tools_version = 34.0.0
+android.ndk_api = 21
+# Biarkan SDK & NDK path default, GitHub Actions akan mengatur dari ENV
+# Jangan isi `android.sdk` atau `android.ndk` secara manual kecuali kamu tahu path-nya
 
 [buildozer]
 log_level = 2
